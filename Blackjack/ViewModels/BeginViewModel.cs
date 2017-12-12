@@ -29,7 +29,7 @@ namespace Blackjack.ViewModels
             }
         }
 
-        private RootViewModel _parentReference;
+        private readonly RootViewModel _parentReference;
 
         /// <summary>
         ///     Default constructor. This is used for maintaining the parent reference in order 
@@ -42,15 +42,14 @@ namespace Blackjack.ViewModels
         }
 
         /// <summary>
-        /// ICommand implementation to start the game, and validate that the username and
-        /// starting money is not incorrect.
+        ///     ICommand implementation to start the game, and validate that the username and
+        ///     starting money is not incorrect.
         /// </summary>
         public ICommand PlayCommand => new Command(
           param =>
           {
               var startingMoneyNumeric = double.Parse(StartingMoney);
               _parentReference.BeginGame(PlayerName, startingMoneyNumeric);
-
           },
           param =>
           {

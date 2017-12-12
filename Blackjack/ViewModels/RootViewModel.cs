@@ -6,8 +6,8 @@ namespace Blackjack.ViewModels
         : ViewModelBase
     {
         /// <summary>
-        ///     Visual states are used to control wether certain controls are to be visible
-        ///     This is the best practice way to deal with this kind of behaviour.
+        ///     Visual states are used to control whether certain controls are to be visible
+        ///     This is to enabled so players can join whilst the game is going on.
         /// </summary>
         public enum BeginViewModelVisualStates
         {
@@ -25,18 +25,6 @@ namespace Blackjack.ViewModels
             {
                 beginView = value;
                 NotifyOfPropertyChange(() => BeginView);
-            }
-        }
-
-        private GameViewModel gameView;
-
-        public GameViewModel GameView
-        {
-            get { return gameView; }
-            set
-            {
-                gameView = value;
-                NotifyOfPropertyChange(() => GameView);
             }
         }
 

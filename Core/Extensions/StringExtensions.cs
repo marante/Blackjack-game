@@ -15,7 +15,7 @@ namespace Core.Extensions
         }
 
         /// <summary>
-        /// Assertion method that ensures that <paramref name="this"/> is not null
+        /// Assertion method that ensures that <paramref name="this"/> is null
         /// </summary>
         /// <param name="this">
         /// The object in which to ensure non-nullability upon

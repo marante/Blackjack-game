@@ -1,28 +1,17 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using Caliburn.Micro;
 
 namespace Core.Models
 {
     public class Hand
     {
-        private ObservableCollection<Card> _cards;
+        private BindableCollection<Card> _cards;
 
         public int NumberOfCards { get; set; }
         public int Score { get; set; }
 
-
-        public Hand()
-        {
-
-        }
-        public Hand(ObservableCollection<Card> cards)
+        public Hand(BindableCollection<Card> cards)
         {
             _cards = cards;
-        }
-
-        public void AddCardToHand()
-        {
-            throw new NotImplementedException();
         }
     }
 }

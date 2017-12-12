@@ -63,8 +63,10 @@
     <Compile Include="Extensions\AssertionExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Helpers\DeckHelper.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Enums\CardSuite.cs" />
+    <Compile Include="Models\Dealer.cs" />
     <Compile Include="Models\Deck.cs" />
     <Compile Include="Models\Hand.cs" />
     <Compile Include="Models\Player.cs" />
